@@ -23,7 +23,7 @@ To answer the question “Is the champion Rell more likely to have a gold lead a
 ### Data Cleaning 
 In order to solve our question, we decided to keep relevant columns that helps answer the question: `position` and `golddiffat15`, and the relevant rows that only consist of all match data related to the Champion Rell, which the value in the champion column is equal to ‘Rell’. This makes each row represent a single Rell match without repetition (in a game of League of Legends, all playing champions must be unique). After getting all match information related to Rell, we notice that there are some empty values in `golddiffat15` that are not recorded in the original dataset. Since we can’t know the gold difference from the missing data, we decide to clean up and remove all empty `golddiffat15` data and keep the rest meaningful data, which makes the row number change from 2047 to 1854. In order to help us faciliate data managing and understand more directly whether the Rell match has a gold lead or not, we add another column named `leading`, which has value `Leading` when the Rell player has positive `golddiffat15` value and `Behind` when the Rell player has non-positive `golddiffat15` value. 
 
-Here are the head of the cleaned DataFrame:
+Here are the head rows of the cleaned DataFrame:
 
 |    | position   |   golddiffat15 | leading   |
 |---:|:-----------|---------------:|:----------|
@@ -115,6 +115,7 @@ Here is the empirical distribution of the test statistic:
 The missingness of `firstbaron` does depend on `teamname` . We wanted to determine if `teamname` and `firstbaron` were Missing at Random or Missing Completely at Random.
 
 Here is the observed statistics when `firstbaron` is missing:
+
 | side   | firstbaron |
 |:-------|----------:|
 | Blue   |  0.499145 |

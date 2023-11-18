@@ -15,7 +15,7 @@ Our dataset is chosen from all the [League of Legends Professional games in 2023
 To answer the question “Is the champion Rell more likely to have a gold lead at 15 minutes as a Jungler than a Support?”, we decided to perform data cleaning of the original dataset and form a new dataset that better answers the question. Among all the 2074 matches containing the champion Rell, only 1854 have valid(non NaN) data in the `golddiffat15` column, which we would like to consider. Thus, the new dataset consists of 1854 rows and 3 columns. The three columns are `position`, `golddiffat15`, and `leading`. We chose these three columns because it shows the position of Rell used by the player, the gold difference between Rell and its opponent at 15 minutes of a game, and whether they are leading or not. The gold difference between Rell and its opponent is what defines whether the Rell player performs better than its opponent. Each row represents each individual Rell match statistics. 
 
 ### Description of Columns
-“position” is ‘jng’ when Rell is played as a Jungler and ‘sup’ when Rell is played as a Support.
+`position` is `jng` when Rell is played as a Jungler and `sup` when Rell is played as a Support.
 `golddiffat15` is the amount of gold difference between the player who plays Rell and the opponent at the 15 minutes of a game.
 `leading` is `Leading` when the Rell player has positive `golddiffat15` value and `Behind` when the Rell player has non positive `golddiffat15` value. This was created after `golddiffat15` was collected.
 

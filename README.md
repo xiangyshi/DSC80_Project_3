@@ -1,9 +1,6 @@
-# DSC80 FA23 Project 3
-This repository serves the primary purpose of hosting a Jekyll GitHub Page for the project 3 report from DSC80_FA23.
+# [Rell-Position-Analysis](https://xiangyshi.github.io/Rell-Position-Analysis/)
 
-Names: \
-Leo Shi A17033789 \
-Eric Gu A16817621
+By: Leo Shi & Eric Gu
 
 
  
